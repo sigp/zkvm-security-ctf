@@ -2,7 +2,7 @@
 
 ## Goal
 
-Understand why a valid zk proof can still be unsafe to consume repeatedly.
+Understand why a valid zk proof can still be unsafe.
 
 ## Scenario
 
