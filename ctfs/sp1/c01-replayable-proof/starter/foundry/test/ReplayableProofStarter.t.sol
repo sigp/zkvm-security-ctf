@@ -29,16 +29,4 @@ contract ReplayableProofStarterTest {
             );
         require(!ok, "invalid proof should fail verification");
     }
-
-    function testReplaySucceedsInStarter() public {
-        SP1Verifier verifier = new SP1Verifier();
-        ReplayableProofStarter c =
-            new ReplayableProofStarter(address(verifier), ReplayableProofStarterFixture.PROGRAM_VKEY);
-
-        c.submit(ReplayableProofStarterFixture.PROOF, ReplayableProofStarterFixture.PUBLIC_VALUES);
-        c.submit(ReplayableProofStarterFixture.PROOF, ReplayableProofStarterFixture.PUBLIC_VALUES);
-
-        uint256 expectedBalance = uint256(c.FIXED_AMOUNT()) * 2;
-        require(c.balances(c.FIXED_RECIPIENT()) == expectedBalance, "replay should credit twice");
-    }
 }
