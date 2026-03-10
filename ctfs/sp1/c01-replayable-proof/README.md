@@ -25,7 +25,7 @@ This scenario is a **Verifier** only challenge, you do not need to modify the Gu
 Use this file to implement your attack:
 - [starter/foundry/test/ReplayableProofKnowledgeCheck.t.sol](./starter/foundry/test/ReplayableProofKnowledgeCheck.t.sol)
 
-It contains an exercise scaffold with TODOs. The test `testExerciseReplayAttack()` is currently failing, modify the test such that it passes.
+It contains an exercise scaffold with TODOs. The function `exerciseReplayAttack()` is intentionally not executed by default; rename it to start with `test` when you are ready to run your exploit.
 
 ## Setup
 

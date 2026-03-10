@@ -9,7 +9,7 @@ import {ReplayableProofStarterFixture} from "./fixtures/ReplayableProofStarterFi
 /// @dev This file is intentionally not executed by default because function names do not start with
 /// `test`. Rename the function when you are ready to run it with `forge test`.
 contract ReplayableProofKnowledgeCheck {
-    function testExerciseReplayAttack() public {
+    function exerciseReplayAttack() public {
         // Deploy the genuine SP1 Groth16 verifier.
         SP1Verifier verifier = new SP1Verifier();
 
