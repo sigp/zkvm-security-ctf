@@ -14,10 +14,8 @@ Identify the bug in the contract and exploit it by submitting a malicious proof 
 - `starter/`: vulnerable implementation.
     - Host: [starter/rust/host/src/main.rs](./starter/rust/host/src/main.rs) - generates fixture values for both the intended program and an attacker-controlled program.
     - Guest: [starter/rust/guest/src/main.rs](./starter/rust/guest/src/main.rs) - intended SP1 program that accepts one canonical payload.
-    - Attacker Guest: [starter/rust/attacker/src/main.rs](./starter/rust/attacker/src/main.rs) - malicious SP1 program that commits arbitrary payloads.
     - Verifier: [starter/foundry/src/ArbitraryVerificationKeyStarter.sol](./starter/foundry/src/ArbitraryVerificationKeyStarter.sol) - vulnerable onchain consumer that accepts a caller-supplied program vkey.
 - `solution/`: recommended patch.
-    - Verifier: [solution/foundry/src/ArbitraryVerificationKeySolution.sol](./solution/foundry/src/ArbitraryVerificationKeySolution.sol) fixed implementation (no peeking!).
 
 ## Where to write code
 
@@ -52,7 +50,7 @@ forge test --match-test testExerciseAttackerControlledVKey
 
 ## Intended program public input envelope
 
-The honest guest only accepts one canonical `PublicValuesV1`:
+The honest guest only accepts `PublicValuesV1`:
 - `chain_id = 1`
 - `context_hash = 0x4444...4444` (32 bytes)
 - `recipient = 0x3333...3333`

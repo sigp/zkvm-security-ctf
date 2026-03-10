@@ -1,7 +1,7 @@
 # C02 Solution: Arbitrary Verification Key
 
 ## Summary
-The bug is not bad proving. The bug is letting the caller choose the verification key at submission time.
+The bug is letting the caller choose the verification key at submission time.
 
 In the starter contract, the same verifier contract will happily validate:
 - the intended proof with the intended program vkey, and
@@ -11,7 +11,7 @@ Because the contract accepts `programVKey` as calldata, it has no policy tying v
 
 ## Attack walkthrough
 1. The attacker writes a new guest program that commits arbitrary `recipient` and `amount`.
-2. The attacker generates a valid proof for that malicious guest, producing a different program vkey.
+2. The attacker generates a valid proof for that malicious guest, producing a different program vkey but same public input fields.
 3. The attacker calls `submit(attackerProgramVKey, attackerProof, attackerPublicValues)`.
 4. The onchain contract forwards the attacker-controlled vkey into `verifier.verifyProof(...)`.
 5. Proof verification succeeds, and the contract applies the attacker-controlled state transition.
