@@ -1,4 +1,4 @@
-# zkVM Security CTFs (SP1 v1)
+# zkVM Application Security CTFs
 
 This repository contains hands-on security CTFs for zkVM applications. The current implementation targets SP1 first, with a Risc0 porting roadmap documented separately.
 
@@ -23,13 +23,9 @@ Setup details: [docs/setup.md](./docs/setup.md)
 | ID | Challenge | Source | Difficulty | Foundry |
 |---|---|---|---|---|
 | C01 | Replayable Proof Submission | Custom | Easy | Yes |
-<!-- | C02 | Trusted Private Witness Data | Custom | Easy-Med | No |
-| C03 | Unconstrained Public Values In Verifier Flow | Custom | Medium | Yes |
-| C04 | Guest Arithmetic + Public Input Aggregation Overflow | Custom | Medium | No |
-| C05 | Missing Public Value Commitments | Blog-derived | Medium | No |
-| C06 | Program Version / Image ID Management | Blog-derived | Med-Hard | Yes |
-| C07 | Verification Key Management | Blog-derived | Hard | Yes |
-| C08 | Precompile Witness Constraint Gaps | Blog-derived | Hard | No | -->
+| C02 | Arbitrary Verification Key | Custom | Easy-Med | Yes |
+| C03 | Unconstrained Public Values | Custom | Easy-Med | Yes |
+| C05 | Host-Side Validation | Custom | Medium | Yes |
 
 ## How To Use Starter Vs Solution
 
@@ -38,9 +34,9 @@ Each challenge folder has:
 - `solution/`: fixed implementation and tests that enforce expected security properties.
 
 Recommended flow:
-1. Read the challenge [README.md](./ctfs/sp1/c01-replayable-proof/README.md).
-2. Run starter tests to and diagnose vulnerable behaviour.
-3. Fix the starter tests to exploit the contract.
+1. Read the challenge README for the scenario you want to work on, for example [C01](./ctfs/sp1/c01-replayable-proof/README.md), [C02](./ctfs/sp1/c02-arbitrary-verification-key/README.md), [C03](./ctfs/sp1/c03-unconstrained-public-values/README.md), or [C05](./ctfs/sp1/c05-host-side-validation/README.md).
+2. Run starter tests and diagnose vulnerable behaviour.
+3. Use the starter exercise/tests to reproduce the exploit.
 4. Implement the fix in starter yourself.
 5. Compare with `solution/`.
 
@@ -51,10 +47,6 @@ Risc0 parity planning for each challenge is in [docs/risc0-roadmap.md](./docs/ri
 ## Challenges
 
 - [ctfs/sp1/c01-replayable-proof](./ctfs/sp1/c01-replayable-proof)
-<!-- - [ctfs/sp1/c02-trusted-private-witness](./ctfs/sp1/c02-trusted-private-witness)
+- [ctfs/sp1/c02-arbitrary-verification-key](./ctfs/sp1/c02-arbitrary-verification-key)
 - [ctfs/sp1/c03-unconstrained-public-values](./ctfs/sp1/c03-unconstrained-public-values)
-- [ctfs/sp1/c04-overflow-constraints](./ctfs/sp1/c04-overflow-constraints)
-- [ctfs/sp1/c05-missing-public-commitments](./ctfs/sp1/c05-missing-public-commitments)
-- [ctfs/sp1/c06-program-version-management](./ctfs/sp1/c06-program-version-management)
-- [ctfs/sp1/c07-verification-key-management](./ctfs/sp1/c07-verification-key-management)
-- [ctfs/sp1/c08-precompile-witness-constraints](./ctfs/sp1/c08-precompile-witness-constraints) -->
+- [ctfs/sp1/c05-host-side-validation](./ctfs/sp1/c05-host-side-validation)

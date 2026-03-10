@@ -1,0 +1,12 @@
+# Rust build artifacts
+starter/rust/target/
+
+# Foundry build artifacts
+starter/foundry/cache/
+starter/foundry/out/
+starter/foundry/broadcast/
+starter/foundry/cache_forge/
+solution/foundry/cache/
+solution/foundry/out/
+solution/foundry/broadcast/
+solution/foundry/cache_forge/

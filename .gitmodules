@@ -1,3 +1,21 @@
 [submodule "ctfs/sp1/c01-replayable-proof/starter/foundry/lib/sp1-contracts"]
 	path = ctfs/sp1/c01-replayable-proof/starter/foundry/lib/sp1-contracts
 	url = https://github.com/succinctlabs/sp1-contracts
+[submodule "ctfs/sp1/c02-arbitrary-verification-key/starter/foundry/lib/sp1-contracts"]
+	path = ctfs/sp1/c02-arbitrary-verification-key/starter/foundry/lib/sp1-contracts
+	url = https://github.com/succinctlabs/sp1-contracts
+[submodule "ctfs/sp1/c02-arbitrary-verification-key/solution/foundry/lib/sp1-contracts"]
+	path = ctfs/sp1/c02-arbitrary-verification-key/solution/foundry/lib/sp1-contracts
+	url = https://github.com/succinctlabs/sp1-contracts
+[submodule "ctfs/sp1/c03-unconstrained-public-values/starter/foundry/lib/sp1-contracts"]
+	path = ctfs/sp1/c03-unconstrained-public-values/starter/foundry/lib/sp1-contracts
+	url = https://github.com/succinctlabs/sp1-contracts
+[submodule "ctfs/sp1/c03-unconstrained-public-values/solution/foundry/lib/sp1-contracts"]
+	path = ctfs/sp1/c03-unconstrained-public-values/solution/foundry/lib/sp1-contracts
+	url = https://github.com/succinctlabs/sp1-contracts
+[submodule "ctfs/sp1/c05-host-side-validation/starter/foundry/lib/sp1-contracts"]
+	path = ctfs/sp1/c05-host-side-validation/starter/foundry/lib/sp1-contracts
+	url = https://github.com/succinctlabs/sp1-contracts
+[submodule "ctfs/sp1/c05-host-side-validation/solution/foundry/lib/sp1-contracts"]
+	path = ctfs/sp1/c05-host-side-validation/solution/foundry/lib/sp1-contracts
+	url = https://github.com/succinctlabs/sp1-contracts
