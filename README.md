@@ -92,3 +92,8 @@ Batch proof accepts N sub-proofs but doesn't verify they all reference the same 
   - Vulnerability: Using Groth16 proofs as a nullifier/nonce is not safe as 
   - Scenario: Similar to c01 except we instead as the proof as the nullifier
   - Learning: Proofs are "malleable"
+
+- Private Data In Public Witness (Easy)
+  - Vulnerability: Include secret data in the public witness
+  - Scenario: We create a signing operations the requires knowledge of some secret key but the key is in the public witness not private
+  - Learning: Don't reveal secrets
