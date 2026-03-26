@@ -27,6 +27,7 @@ Setup details: [docs/setup.md](./docs/setup.md)
 | C03 | Unconstrained Public Values | Custom | Easy | Yes |
 | C04 | Integer Overflow in Guest | Custom | Easy | Yes |
 | C05 | Host-Side Validation | Custom | Easy-Medium | Yes |
+| C06 | Conditional Private Inputs | Custom | Easy | No |
 
 ## Challenges
 
@@ -35,6 +36,7 @@ Setup details: [docs/setup.md](./docs/setup.md)
 - [ctfs/sp1/c03-unconstrained-public-values](./ctfs/sp1/c03-unconstrained-public-values)
 - [ctfs/sp1/c04-integer-overflow-in-guest](./ctfs/sp1/c04-integer-overflow-in-guest)
 - [ctfs/sp1/c05-host-side-validation](./ctfs/sp1/c05-host-side-validation)
+- [ctfs/sp1/c06-conditional-private-inputs](./ctfs/sp1/c06-conditional-private-inputs)
 
 ## How To Use Starter Vs Solution
 
@@ -57,11 +59,6 @@ TODO:
 - Risc0 parity planning for each challenge is in [docs/risc0-roadmap.md](./docs/risc0-roadmap.md).
 
 Considerations of harder examples
-
-- Conditional Private Inputs (Easy)
-  - Vulnerability: Guest has multiple execution paths but only validates canonical values on one path
-  - Scenario: Guest does if is_test { skip_validation }, attacker triggers test path
-  - Learning: All execution paths must be secure, control flow analysis
 
 - Proof Expiration (Medium)
   - Vulnerability: No timestamp/deadline check on proof validity

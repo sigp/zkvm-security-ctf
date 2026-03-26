@@ -1,0 +1,10 @@
+[package]
+name = "verifier"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+common = { path = "../common" }
+host = { path = "../host" }
+sp1-sdk = "5.2.4"

@@ -1,0 +1,4 @@
+[workspace]
+members = ["common", "guest", "host", "verifier"]
+default-members = ["verifier"]
+resolver = "2"
