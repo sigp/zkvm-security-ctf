@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 use serde::{Deserialize, Serialize};
 
 pub const FIXED_CHAIN_ID: u64 = 1;

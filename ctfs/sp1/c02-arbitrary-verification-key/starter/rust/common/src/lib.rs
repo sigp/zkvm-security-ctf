@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 use serde::{Deserialize, Serialize};
 
 pub const HONEST_CHAIN_ID: u64 = 1;

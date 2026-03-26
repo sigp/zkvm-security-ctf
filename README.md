@@ -2,6 +2,10 @@
 
 This repository contains hands-on security CTFs for zkVM applications. The current implementation targets SP1 first, with a Risc0 porting roadmap documented separately.
 
+## License
+
+The first-party code in this repository is licensed under MIT. Bundled SP1 and Forge libraries keep their upstream licenses.
+
 ## Purpose And Audience
 
 These CTFs are for Rust and smart contract engineers learning practical zkVM security failure modes:

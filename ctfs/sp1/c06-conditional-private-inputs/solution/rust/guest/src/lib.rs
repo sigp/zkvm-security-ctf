@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 use common::{is_canonical_claim, ClaimPublicValues, PrivateInputs};
 
 pub fn process_claim(inputs: PrivateInputs) -> ClaimPublicValues {

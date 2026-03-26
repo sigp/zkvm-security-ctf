@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 use common::{is_canonical_payload_except_chain_id, PublicValuesV1};
 
 pub fn validate_public_values(public_values: PublicValuesV1) -> PublicValuesV1 {

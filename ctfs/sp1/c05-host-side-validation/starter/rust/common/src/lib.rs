@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 use serde::{Deserialize, Serialize};
 
 /// Fields that are validated by the guest program.

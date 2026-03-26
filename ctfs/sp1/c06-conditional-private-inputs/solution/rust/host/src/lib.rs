@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 use anyhow::{anyhow, Result};
 use common::{honest_private_inputs, ClaimPublicValues, PrivateInputs};
 use sp1_sdk::{

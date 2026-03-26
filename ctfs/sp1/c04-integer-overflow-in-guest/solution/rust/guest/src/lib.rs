@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 use common::{checked_total, PublicValuesV1};
 
 pub fn commit_claim(public_values: PublicValuesV1) -> PublicValuesV1 {

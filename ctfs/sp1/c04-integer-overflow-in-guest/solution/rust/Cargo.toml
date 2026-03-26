@@ -2,3 +2,6 @@
 members = ["common", "guest", "host"]
 default-members = ["guest"]
 resolver = "2"
+
+[workspace.package]
+license = "MIT"
