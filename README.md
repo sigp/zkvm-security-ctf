@@ -97,3 +97,8 @@ Batch proof accepts N sub-proofs but doesn't verify they all reference the same 
   - Vulnerability: Include secret data in the public witness
   - Scenario: We create a signing operations the requires knowledge of some secret key but the key is in the public witness not private
   - Learning: Don't reveal secrets
+
+
+# Donations on Giveth
+
+https://giveth.io/project/zk-applications-ctf
